@@ -1,11 +1,83 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN       " "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
 
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
+    <style>
+        .wrapper {
+            margin: 2%;
+            padding: 5% 8%;
+            border: #e5e3d8 1px solid;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+        .container {  padding: 0 4%; }
+        .content img {  max-width: 100%; }
+        .footer-cell {
+            padding: 0 0 20px 0;
+            color: #888888;
+            font-size: 11px;
+            line-height: 1.3;
+            font-family: sans-serif;
+        }
+        body {
+            width:100% !important;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+            color:#828282;
+            background:#ffffff;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust:none;
+        }
+        h1 {
+            margin: 0.4em 0 0.8em 0;
+            padding: 0;
+            font-weight: 600;
+            color: #212425;
+            font-size: 28px;
+            line-height: 1.1;
+            font-family: sans-serif;
+            letter-spacing: -1px;
+        }
+        h2 {
+            margin: 0.6em 0;
+            padding: 0;
+            font-weight: 600;
+            color: #212425;
+            font-size: 20px;
+            line-height: 1.2em;
+            font-family: sans-serif;
+            letter-spacing: -1px;
+        }
+        a { color: #5ba4e5; }
+        p {
+            margin: 0;
+            padding: 0 0 1.5em 0;
+            color:#828282;
+            font-size: 15px;
+            line-height: 1.5em;
+            font-family: sans-serif;
+            font-weight:normal;
+        }
+        ul, ol {
+            margin: 0;
+            padding: 0 0 1.5em 2em;
+            color:#828282;
+            font-size: 15px;
+            line-height: 1.5em;
+            font-family: sans-serif;
+        }
+
+        @media only screen and (max-width: 620px) {
+            table[class="main-wrapper"] {width: 100% !important;}
+        }
+    </style>
 </head>
-<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; background: #ffffff; color: #828282; font-family: sans-serif; font-size: 15px; line-height: 1.5; margin: 0; width: 100%;">
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
 
 <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
     <tr>
@@ -15,29 +87,29 @@
                 <tr>
                     <td class="cell" width="100%">
 
-                        <div class="wrapper" style="-moz-border-radius: 3px; -webkit-border-radius: 3px; border: #e5e3d8 1px solid; border-radius: 3px; margin: 2%; padding: 5% 8%;">
+                        <div class="wrapper">
                             <table class="content" width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                     <td class="content-cell" width="100%">
 
                                         <!-- START OF EMAIL CONTENT -->
-                                        <h1 style="color: #212425; font-family: sans-serif; font-size: 28px; font-weight: 600; letter-spacing: -1px; line-height: 1.1; margin: 0.4em 0 0.8em 0; padding: 0;">Welcome</h1>
-                                        <p style="color: #828282; font-family: sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5em; margin: 0; padding: 0 0 1.5em 0;"><strong>{{blogName}}</strong> is using Ghost to publish things on the internet! {{invitedByName}} has invited you to join. Please click on the link below to activate your account.</p>
-                                        <p style="color: #828282; font-family: sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5em; margin: 0; padding: 0 0 1.5em 0;"><a href="{{resetLink}}" style="color: #5ba4e5;">Click here to activate your account</a></p>
-                                        <p style="color: #828282; font-family: sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5em; margin: 0; padding: 0 0 1.5em 0;"><strong>No idea what Ghost is?</strong> It's a simple, beautiful platform for running an online blog or publication. Writers, businesses and individuals from all over the world use Ghost to publish their stories and ideas. <a href="http://ghost.org" style="color: #5ba4e5;">Find out more</a>.</p>
-                                        <p style="color: #828282; font-family: sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5em; margin: 0; padding: 0 0 1.5em 0;">If you have trouble activating your {{blogName}} account, you can reach out to {{invitedByName}} on {{invitedByEmail}} for assistance.</p>
-                                        <p style="color: #828282; font-family: sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5em; margin: 0; padding: 0 0 1.5em 0;">Have fun, and good luck!</p>
+                                        <h1>欢迎加入智媒大家庭</h1>
+                                        <p> {{invitedByName}} 邀请你加入智媒的博客，在这里你可以把你在工作、生活上的点点滴滴记录下来。请通过下面的链接，激活你的账号。 </p>
+                                        <p><a href="{{resetLink}}">点击这里激活的你的账号</a></p>
+                                        
+                                        <p>如果你对 {{blogName}} 博客上的账号有疑问, 可以向 {{invitedByName}} （{{invitedByEmail}}） 咨询。</p>
+                                        <p>一起享受创作的乐趣吧！</p>
                                         <!-- END OF EMAIL CONTENT -->
 
                                     </td>
                                 </tr>
                             </table>
                         </div>
-                        <div class="container" style="padding: 0 4%;">
+                        <div class="container">
                             <table class="footer" width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <td class="footer-cell" align="right" style="color: #888888; font-family: sans-serif; font-size: 11px; line-height: 1.3; padding: 0 0 20px 0;">
-                                        Sent by <a href="{{siteUrl}}" style="color: #5ba4e5;">{{siteUrl}}</a>
+                                    <td class="footer-cell" align="right">
+                                        此邮件由 <a href="{{siteUrl}}">{{siteUrl}}</a> 发出。
                                     </td>
                                 </tr>
                             </table>
@@ -53,4 +125,3 @@
 
 </body>
 </html>
-
